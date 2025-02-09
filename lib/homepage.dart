@@ -8,7 +8,7 @@ import 'package:innowah/news.dart';
 import 'package:innowah/profilepage.dart';
 import 'package:innowah/rentals_page.dart';
 import 'package:innowah/rewards_page.dart'; // Ensure this is created
-import 'package:innowah/signup.dart';
+
 
 import 'car_route.dart';
 
@@ -25,12 +25,12 @@ class _HomePageState extends State<HomePage> {
       _selectedIndex = index;
     });
 
-    if (index == 1) { // Assumes "Rewards" is at index 1
+    if (index == 1) {
       Navigator.push(context, MaterialPageRoute(builder: (context) => RewardsPage()));
-    } else if (index == 3) { // Assumes "Profile" is at index 3
+    } else if (index == 3) {
       Navigator.push(context, MaterialPageRoute(builder: (context) => ProfilePage()));
     }
-    // Add navigation for other indices if needed
+
   }
 
   @override
